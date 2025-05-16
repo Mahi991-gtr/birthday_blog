@@ -126,3 +126,25 @@ a {
     0 6px 12px rgba(0, 0, 0, 0.4),
     inset -3px -3px 6px rgba(255, 255, 255, 0.5);
 }
+@media screen and (max-width: 768px) {
+  #main {
+    overflow-x: auto;
+  }
+
+  #wrap {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: auto;
+  }
+
+  #text, #canvas {
+    position: static;
+    margin: 10px;
+    flex-shrink: 0;
+  }
+
+  body {
+    overflow-x: scroll;
+  }
+}
